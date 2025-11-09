@@ -14,7 +14,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/events', eventsRoutes);
 app.use('/api', swapsRoutes);
 
-app.get('/', (req, res) => res.send('SlotSwapper API running 🚀'));
+app.get('/', (req, res) => res.send('SlotSwapper API running '));
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => console.log(`✅ Server running on port ${port}`));
