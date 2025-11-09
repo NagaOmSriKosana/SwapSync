@@ -1,0 +1,104 @@
+/* ===== Global Theme ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f6f9;
+  color: #333;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: #2d5b8e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 500;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 450px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Forms ===== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2d5b8e;
+  box-shadow: 0 0 4px rgba(45, 91, 142, 0.3);
+}
+
+button {
+  background-color: #2d5b8e;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #244d7c;
+}
+
+p {
+  text-align: center;
+}
+
+/* ===== Calendar ===== */
+.calendar-list {
+  margin-top: 20px;
+}
+.calendar-item {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+}
+.calendar-item b {
+  color: #2d5b8e;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
